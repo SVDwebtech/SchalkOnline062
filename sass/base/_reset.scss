@@ -1,4 +1,4 @@
-@use '../abstracts/index' as *;
+@use '../abstracts/index.scss' as *;
 
 *,
 *::after,
@@ -27,7 +27,7 @@ html {
 }
 
 body {
-	background-color: $cp-dark;
+	background-color: $cp-charcoal;
 	box-sizing: border-box;
 	@media (min-width: 2000px) {
 		margin: 0 auto;

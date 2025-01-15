@@ -1,0 +1,85 @@
+/*
+0px		- 		600px:			mobile 	--> 	Mobile First Approach (where normal styles apply)
+600px		- 		900px: 			tab-port 	-->	Tablet Portrait 
+900px		-		1200px:			tab-land	-->	Tablet Landscape
+1200px	-		1800px:			desk		-->	Desktop 
+1800px +							big-desk	-->	Big Desktop
+
+REMEMBER: 1em = 16px;
+$breakpoint argument choices
+	- tab-port and >	600 --> 900 	: min-width: 37.5em (600/16)
+	- tab-land and >	900 --> 1200	: min-width: 56.25em (900/16)
+	- desk and     >	1200 --> 1800	: min-width: 75em (1200/16)
+	- big-desk and >  1800 +		: min-width: 112.5em (1800/16)
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+*/
+/* SCSS HEX */
+/* SCSS Gradient */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Set base font size to 10px for easier rem calculations (10px / 16px * 100 = 62.5%) */
+  font-size: 62.5%;
+}
+@media (min-width: 37.5em) {
+  html {
+    font-size: 68.75%;
+  }
+}
+@media (min-width: 56.25em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: 75em) {
+  html {
+    font-size: 81.25%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+body {
+  background-color: rgb(59, 59, 59);
+  box-sizing: border-box;
+}
+@media (min-width: 2000px) {
+  body {
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: clamp(1.4rem, 4.6vw, 1.6rem);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6;
+}
+
+body {
+  background-color: lightseagreen;
+}
+
+/*# sourceMappingURL=style.css.map */

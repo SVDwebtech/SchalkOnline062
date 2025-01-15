@@ -5,7 +5,8 @@
   "description": "basic website to showcase embroidery designs",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "sass": "sass sass/main.scss:public/css/style.css --watch"
   },
   "author": "Schalk van Dyk",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "sass": "^1.83.4"
   }
 }
