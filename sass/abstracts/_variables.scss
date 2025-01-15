@@ -1,0 +1,52 @@
+/* SCSS HEX */
+$cp-apricot: #ffd1baff;
+$cp-lilac: #baa7c8ff;
+$cp-celadon: #bee5bfff;
+$cp-celeste: #a0f1f1ff;
+$cp-timberwolf: #d3d3d3ff;
+$cp-white-smoke: #f5f5f5ff;
+$cp-charcoal: rgb(59, 59, 59);
+
+$cf-white-smoke: #f5f5f5ff;
+$cf-lightgrey: rgb(169, 169, 169);
+$cf-darkgrey: rgb(115, 115, 115);
+$cf-charcoal: rgb(59, 59, 59);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-right: linear-gradient(90deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-bottom: linear-gradient(180deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-left: linear-gradient(270deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-top-right: linear-gradient(45deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-bottom-right: linear-gradient(135deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-top-left: linear-gradient(225deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-bottom-left: linear-gradient(315deg, #ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+$gradient-radial: radial-gradient(#ffd1baff, #baa7c8ff, #bee5bfff, #a0f1f1ff, #d3d3d3ff, #f5f5f5ff);
+
+// font-size
+$fs-headingH1: 3rem;
+$fs-headingH2: 2.5rem;
+$fs-headingH3: 2rem;
+$fs-headingH4: 1.5rem;
+$fs-button: 1.5rem;
+$fs-body-text: 1rem;
+
+// border-radius
+$br-small: .25rem;
+$br-medium: .5rem;
+$br-large: 1rem;
+
+// box-shadow
+$bs-dark: 0 0 5px 2px rgba($cp-charcoal, .4);
+$bs-btn: 0px 1px 2px 1px rgba($cp-charcoal, .5);
+$bs-btn-hover: 0px 8px 40px 3px rgba($cp-charcoal, .7);
+
+//margin
+$mb-headingH1: 3.5rem;
+$mb-headingH2: 2.5rem;
+$mb-headingH3: 1.5rem;
+$mb-headingH4: 1rem;
+$mb-button: 1.5rem;
+$mb-body-text: 1rem;
+$mb-section: 4rem;
+$mb-article: 2.5rem;

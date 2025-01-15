@@ -1,0 +1,47 @@
+@use '../abstracts/index' as *;
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	scroll-behavior: smooth;
+	/* Set base font size to 10px for easier rem calculations (10px / 16px * 100 = 62.5%) */
+	font-size: 62.5%; // 1rem = 10px
+	@include respond(tab-port) {
+		font-size: 68.75%; 
+	}
+	@include respond(tab-land) {
+		font-size: 75%;  
+	}
+	@include respond(desk) {
+		font-size: 81.25%; 
+	}
+	@include respond(big-desk) {
+		font-size: 93.75%; 
+	}
+}
+
+body {
+	background-color: $cp-dark;
+	box-sizing: border-box;
+	@media (min-width: 2000px) {
+		margin: 0 auto;
+		max-width: 2000px;
+	}
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
