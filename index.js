@@ -1,6 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import clientsRouter from './src/routes/clients.js'; // Adjust the path to match your file structure
 import dotenv from 'dotenv';
 
 // Load environment variables from .env file
@@ -31,6 +32,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   res.render('home', { title: 'Home', message: 'Welcome' });
 });
+
+// Use the clients routes
+app.use('/api', clientsRouter);
 
 // Start the server
 app.listen(PORT, () => {

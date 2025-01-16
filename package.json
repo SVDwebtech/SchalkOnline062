@@ -5,17 +5,18 @@
   "description": "basic website to showcase embroidery designs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",  
-    "sass": "sass sass/main.scss:public/css/style.css --watch", 
-    "browser-sync": "browser-sync start --config ./bs-config.cjs", 
-    "dev": "run-p sass start browser-sync"  
+    "start": "nodemon index.js",
+    "sass": "sass sass/main.scss:public/css/style.css --watch",
+    "browser-sync": "browser-sync start --config ./bs-config.cjs",
+    "dev": "run-p sass start browser-sync"
   },
   "author": "Schalk van Dyk",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9",
