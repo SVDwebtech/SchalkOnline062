@@ -30,7 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Define the routes
 app.get('/', (req, res) => {
-  res.render('home', { title: 'Home', message: 'Welcome' });
+  res.render('underConstruction', { title: 'Home', message: 'Welcome' });
 });
 
 // Use the clients routes
