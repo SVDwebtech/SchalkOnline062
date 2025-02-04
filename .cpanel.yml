@@ -4,3 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/schalkonlineco/schalkonline.co.za/
     - /bin/cp index.js $DEPLOYPATH
     - /bin/cp -r views/* $DEPLOYPATH/views/
+    - /bin/cp -r public/* $DEPLOYPATH/public/
