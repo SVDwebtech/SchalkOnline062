@@ -33,6 +33,10 @@ app.get('/', (req, res) => {
   res.render('underConstruction', { title: 'Home', message: 'Welcome' });
 });
 
+app.get('/dev', (req, res) => {
+  res.render('home', { title: 'Home', message: 'Welcome' });
+});
+
 // Use the clients routes
 app.use('/api', clientsRouter);
 
